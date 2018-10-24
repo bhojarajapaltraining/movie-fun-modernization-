@@ -1,4 +1,4 @@
-server.port: 8081
+server.port: 8082
 
 spring:
   jpa:
@@ -6,7 +6,7 @@ spring:
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
 
   datasource:
-    url: jdbc:mysql://localhost:3306/albums?useSSL=false
+    url: jdbc:mysql://localhost:3306/movies?useSSL=false
     username: root
     tomcat:
       max-active: 4
@@ -17,8 +17,3 @@ spring:
 logging.level:
   root: WARN
   org.superbiz.moviefun: DEBUG
-
-s3:
-  accessKey: 1CNZ07JA5A3TXAOMFUHV
-  secretKey: 1isi/butSmdtQXfvMhMWPWWUPrMs4HCxFVOCDa4s
-  bucketName: moviefun
